@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Styling for the form */
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-control {
+            height: calc(2.5em + 0.75rem + 2px);
+        }
+        
+        .flag {
+            padding-right: 10px;
+        }
+        
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .toggle-container img {
+            margin-right: 10px;
+        }
+        
+        .right-align {
+            position: absolute;
+            right: 0;
+            /* Align to the right */
+            margin-right: 20px;
+            /* Optional: spacing from the right edge */
+            top: 0;
+            /* Align to the top, adjust if needed */
+            font-size: 16px;
+            /* Adjust font size */
+        }
+    </style>
+</head>
+
+<body>
+    <label class="right-align">
+        Looking for Property? <a href="#">Click Here</a>
+    </label>
+
+    <div class="container mt-5">
+        <form>
+            <div class="form-row">
+                <!-- Name Field -->
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <!-- Email Field -->
+                <div class="form-group col-md-6">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <!-- Mobile Number with Country Code -->
+                <div class="form-group col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="India Flag" width="20">
+                                +91
+                            </span>
+                        </div>
+                        <input type="tel" class="form-control" placeholder="Mobile Number" required>
+                    </div>
+                </div>
+
+                <!-- City Select Field -->
+                <div class="form-group col-md-6">
+                    <select class="form-control" required>
+                        <option value="">Select City</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- WhatsApp Updates Toggle -->
+            <div class="form-row">
+                <div class="form-group col-md-6 toggle-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp Icon" width="20">
+                    <label class="mr-2">Get updates on</label>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="whatsappToggle">
+                        <label class="custom-control-label" for="whatsappToggle">WhatsApp</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Sponsor Registration</h2>
+        <form action="/submit-form" method="POST">
+            <!-- Left Column -->
+            <div class="form-left">
+                <label for="prefix">Prefix</label>
+                <input type="text" id="prefix" name="prefix" />
+
+                <label for="name">Name</label>
+                <div class="name-fields">
+                    <input type="text" id="first-name" name="first_name" placeholder="First Name" />
+                    <input type="text" id="last-name" name="last_name" placeholder="Last Name" />
+                </div>
+
+                <label for="pronouns">Preferred Pronouns</label>
+                <input type="text" id="pronouns" name="pronouns" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="sample@example.com" required />
+
+                <label for="work-phone">Work Phone</label>
+                <input type="tel" id="work-phone" name="work_phone" />
+
+                <label for="cell-phone">Cell Phone</label>
+                <input type="tel" id="cell-phone" name="cell_phone" />
+
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" name="job_title" />
+
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" />
+
+                <label for="address">Full Business Address</label>
+                <textarea id="address" name="address"></textarea>
+
+                <label for="website">Company Website</label>
+                <input type="url" id="website" name="website" />
+            </div>
+
+            <!-- Right Column -->
+            <div class="form-right">
+                <label for="company-description">Company Description</label>
+                <textarea id="company-description" name="company_description"></textarea>
+
+                <label for="facebook-page">Company Facebook Page</label>
+                <input type="url" id="facebook-page" name="facebook_page" />
+
+                <label for="twitter-handle">Company Twitter Handle</label>
+                <input type="text" id="twitter-handle" name="twitter_handle" />
+
+                <label for="linkedin-handle">Company LinkedIn Handle</label>
+                <input type="text" id="linkedin-handle" name="linkedin_handle" />
+
+                <label for="sponsorship-level">Sponsorship Level</label>
+                <div class="sponsorship-level">
+                    <input type="radio" id="gold" name="sponsorship_level" value="gold">
+                    <label for="gold">Gold</label>
+
+                    <input type="radio" id="diamond" name="sponsorship_level" value="diamond">
+                    <label for="diamond">Diamond</label>
+
+                    <input type="radio" id="platinum" name="sponsorship_level" value="platinum">
+                    <label for="platinum">Platinum</label>
+                </div>
+
+                <label for="additional-guests">Additional Guests (name, email)</label>
+                <textarea id="additional-guests" name="additional_guests"></textarea>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

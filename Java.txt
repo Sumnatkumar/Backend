@@ -1,0 +1,13 @@
+length - It representns the size of array
+	-It is final variable applicable for arrays.
+length() - it is final method applicable for string abject.
+	-It represents the no of characters in string.
+
+
+byte --> short --> (int) --> long --> float -- double
+           |
+          char
+
+char c = 'A'       95
+int a = c;
+S.O.P(a)

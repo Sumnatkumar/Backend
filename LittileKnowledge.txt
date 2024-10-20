@@ -1,0 +1,16 @@
+//Java Full Stack Developer
+
+**Learn HTML VS XML
+**Learn XML VS JSON
+**Learn website VS web Application VS APP
+**Learn CLOUD AND AWS
+**Learn UI VS UX
+**Learn Window(Edge),Linex(MF) AND Mac(Safari)
+**SEO
+**https://animate.style/
+**JPG VS JPEG VS PNG VS SVG
+** code .
+** Tabnine and tabnime.com
+**meta :- use Search engine purpose and locatating to easy for links(Search engine obtimization) and responsibe purpose ,meta means about data.
+**chatgpt, google
+**type="text,email,passowrd,number,radio,checkbox,color,range,button,search,submit,reset,date,time,datetime,hidden,tel,file,month.image,url,datetime-local,week
